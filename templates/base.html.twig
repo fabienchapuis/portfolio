@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Portfolio de Fabien Chapuis Développeur Web Junior">
+    <meta author="Fabien Chapuis">
+    <meta name="robots" content="index">
+    <meta name="Category" content="internet">
+
+    <link rel="icon" href="{{asset('build/icones/power9.png') }}">
+
+    <!-- Open Graph meta pour Facebook -->
+    <meta property="og:title" content="Fabien Chapuis" />
+    <meta property="og:url" content="http://www.exemple.com/" />
+    <meta property="og:image" content="https://exemple.com/wa_files/image-fb.jpeg" />
+    <meta property="og:description" content="Portfolio de Fabien Chapuis Développeur Web Junior" />
+    <meta property="og:site_name" content="mon Portfolio" />
+
+    <!-- Card meta pour Twitter -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nomtwitter">
+    <meta name="twitter:title" content="Fabien Chapuis">
+    <meta name="twitter:description" content="Portfolio de Fabien Chapuis Développeur Web Junior">
+
+    <!-- Twitter summary card avec image large de 280x150px -->
+
+    <meta name="twitter:image:src" content="https://www.exemple.com/wa_files/image-twitter.jpeg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+    <title>{% block title %}Fabien CHAPUIS{% endblock %}</title>
+
+    {% block stylesheets %}{% endblock %}
+</head>
+
+<body>
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

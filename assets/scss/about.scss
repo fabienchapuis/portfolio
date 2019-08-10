@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "whiterabbit";
+    src: url("../fonts/whiterabbit/whitrabt-webfont.eot");
+    src: url("../fonts/whiterabbit/whitrabt-webfont.svg");
+    src: url("../fonts/whiterabbit/whitrabt-webfont.ttf");
+    src: url("../fonts/whiterabbit/whitrabt-webfont.woff");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    overflow: hidden;
+    background-image: url("../images/white.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+
+
+    h1 {
+        margin-top: 2%;
+        margin-left: 2%;
+        font-size: 3em;
+        font-family: "whiterabbit";
+    }
+
+    .def {
+
+        font-family: "whiterabbit";
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
