@@ -15,7 +15,7 @@ Encore
     //.setManifestKeyPrefix('build/')
     .addStyleEntry('css/base','./assets/scss/base.scss')
     .addStyleEntry('css/about','./assets/scss/about.scss')
-
+    .addStyleEntry('css/folio','./assets/scss/folio.scss')
     /*
      * ENTRY CONFIG
      *
