@@ -1,21 +1,94 @@
 {% extends 'base.html.twig' %}
-{% block stylesheets %} <link rel="stylesheet" href="{{ asset('build/css/about.css') }}">{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('build/css/about.css') }}">{% endblock %}
 
 {% block body %}
+<section class="container-fluid">
+<h1 class="col-12 ">A propos de moi </h1>
+    <div class="container">
+        <p class=" def text-center d-flex justify-content-between">j'ai commencé ma vie professionnelle en tant
+            qu'électricien dans le bâtiment,
+            après 15 ans de dur labeur sur divers chantiers, je me suis lassé et j'ai décider de devenir développeur
+            web,
+            passionné d'informatique et de nouvelles technologies,
+            fervent défenseur du logiciel libre et utilisateur aguerri du système d'exploitation Linux,
+            j'ai constamment besoin d'apprendre et je pense que le secteur de l'informatique
+            est parfait pour nourrir ma soif de connaissances.</p>
+    </div>
+</section>
+<section class="container-fluid" >
 
-<h1 class="mt-6">A propos de moi </h1>
+<h2>Technologies et Framework</h2>
+<div class="row">
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/html5-original.svg') }}" alt="logo html5">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/css3-original.svg') }}" alt="logo css3">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/javascript-plain.svg') }}" alt="logo javascript">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/bootstrap-plain.svg') }}" alt="logo bootstrap">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/git-original.svg') }}" alt="logo sass">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/sass-original.svg') }}" alt="logo git">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/debian-original.svg') }}" alt="logo debian">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/linux-plain.svg') }}" alt="logo linux">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/nodejs-plain.svg') }}" alt="logo nodejs">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/react-original.svg') }}" alt="logo react">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/symfony-original.svg') }}" alt="logo symfony">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/webpack-plain.svg') }}" alt="logo webpack">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/photoshop-line.svg') }}" alt="logo photoshop">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/illustrator-line.svg') }}" alt="logo illustrator">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/mysql-original.svg') }}" alt="logo mysql">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/php-plain.svg') }}" alt="logo php">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/babel-original.svg') }}" alt="logo babel">
+</div>
+<div class="col-2">
+<img class="icone" src="{{ asset('build/icones/techno/apache-original-wordmark.svg') }}" alt="logo apache">
+</div>
 
-<p class=" def text-center d-flex justify-content-between">j'ai commencé ma vie professionnelle en tant qu'électricien dans le bâtiment, 
-    après 15 ans de dur labeur sur divers chantiers, je me suis lassé et j'ai décider de devenir développeur web, 
-    passionné d'informatique et de nouvelles technologies, 
-    fervent défenseur du logiciel libre et utilisateur aguerri du système d'exploitation Linux,
-    j'ai constamment besoin d'apprendre et je pense que le secteur de l'informatique
-    est parfait pour nourrir ma soif de connaissances.</p>
 
 
-<h2></h2>
 
 
+
+
+
+
+
+
+
+
+</div>
+</section>
 
 
 {% endblock %}
