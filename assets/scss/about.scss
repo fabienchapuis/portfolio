@@ -22,7 +22,7 @@ body {
 
 
     h1 {
-        margin-top: 1%;
+        margin-top: -10%;
         font-size: 3em;
         font-family: "whiterabbit";
     }
@@ -51,6 +51,84 @@ body {
         width: 45%;
     }
 
+
+    #container {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        font-family: "whiterabbit";
+        
+        
+
+    }
+
+    #burger {
+        display: block;
+        cursor: pointer;
+        margin: 50px auto;
+        margin-left: 85vw;
+        // position:relative;
+        
+    }
+
+    #burger p {
+        margin: 0;
+        text-align: center;
+    }
+
+    #burger div {
+        width: 35px;
+        height: 5px;
+        background-color: #000;
+        margin: 6px auto;
+        transition: 0.4s;
+    }
+
+    .effect .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .effect .bar2 {
+        opacity: 0;
+    }
+
+    .effect .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.show {
+        display: block;
+        list-style: none;
+        text-decoration: none;
+        position: absolute;
+        top: 75px;
+        right:75px;
+        
+    }
+
+    nav li a{
+        list-style: none;
+        text-align: center;
+        color:black;
+        text-decoration: none;
+        margin-bottom: 10px;
+        margin-left: 85vw;
+        position: relative;
+
+    
+
+    }
+    a:hover {
+        color: black;
+        text-decoration: none;
+
+    }
 
 
 
