@@ -13,13 +13,13 @@
 
 body {
     overflow: hidden;
-    background-image: url("../images/wall16.jpg");
+    background-image: url("../images/wall26.jpg");
     width: 100vw;
     height: 100vh;
     background-position: center;
     background-size: cover;
     text-decoration: none;
-    // color: white;
+    color: white;
 
     h1 {
         margin-top: -10%;
@@ -115,7 +115,7 @@ body {
     nav li a{
         list-style: none;
         text-align: center;
-        color:black;
+        color:white;
         text-decoration: none;
         margin-bottom: 10px;
         margin-left: 85vw;
