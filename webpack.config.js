@@ -16,6 +16,7 @@ Encore
     .addStyleEntry('css/base','./assets/scss/base.scss')
     .addStyleEntry('css/about','./assets/scss/about.scss')
     .addStyleEntry('css/folio','./assets/scss/folio.scss')
+    .addStyleEntry('css/contact','./assets/scss/contact.scss')
     /*
      * ENTRY CONFIG
      *
