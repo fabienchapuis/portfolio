@@ -28,13 +28,13 @@ class Property
     private $description;
 
         /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=false)
      * @var string|null
      */
     private $url;
 
         /**
-     * @ORM\Column(type="date", nullable=true)
+     * @ORM\Column(type="date", nullable=false)
      */
     private $date;
 
