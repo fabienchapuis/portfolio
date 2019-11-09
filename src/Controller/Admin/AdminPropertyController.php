@@ -45,7 +45,7 @@ class AdminPropertyController extends AbstractController{
 
 
 /**
- * @Route("/admin/property/create", name="admin.property.edit )
+ * @Route("/admin/property/create", name="admin.property.new" )
  */
     public function new( Request $request){
         $property = new Property();
