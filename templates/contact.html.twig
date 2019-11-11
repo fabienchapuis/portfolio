@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block body %}
-<div id="container"> 
+<div id="container">
     <div id="burger">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -15,10 +15,31 @@
     <nav>
         <li><a href="{{ path('index') }}">Home</a></li>
         <li><a href="{{ path('about') }}">About</a></li>
-        <li><a href="{{ path('folio') }}">PortFolio</a></li> 
-        <li><a href="{{ path('contact') }}">Contact</a></li> 
+        <li><a href="{{ path('folio') }}">PortFolio</a></li>
+        <li><a href="{{ path('contact') }}">Contact</a></li>
     </nav>
 </div>
+
+<div id="contactForm" class="mt-4">
+    {{ form_start(form) }}
+        <div class="row">
+            <div class="col">{{ form_row(form.firstname) }}</div>
+            <div class="col">{{ form_row(form.lastname) }}</div>
+        </div>
+        <div class="row">
+            <div class="col">{{ form_row(form.phone) }}</div>
+            <div class="col">{{ form_row(form.email) }}</div>
+        </div>
+    {{ form_rest(form) }}
+    <div class="form-group">
+        <button class="btn btn-primary">Envoyer</button>
+    </div>
+    {{ form_end(form) }}
+
+
+
+</div>
+
 {% block javascripts %} {{ encore_entry_script_tags('js/app') }} {% endblock %}
 
 {% endblock %}
