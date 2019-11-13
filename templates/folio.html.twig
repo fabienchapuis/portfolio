@@ -3,6 +3,21 @@
 <link rel="stylesheet" href="{{ asset('build/css/folio.css') }}">
 {% endblock %}
 {% block body %}
+<div id="container">
+    <div id="burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <p>Menu</p>
+    </div>
+
+    <nav>
+        <li><a href="{{ path('index') }}">Home</a></li>
+        <li><a href="{{ path('about') }}">About</a></li>
+        <li><a href="{{ path('folio') }}">PortFolio</a></li>
+        <li><a href="{{ path('contact') }}">Contact</a></li>
+    </nav>
+</div>
 <div class="container">
     <h2>Mes Projets</h2>
     <div class="row flex">
@@ -26,4 +41,5 @@
         {% endfor %}
     </div>
 </div>
+{% block javascripts %} {{ encore_entry_script_tags('js/app') }} {% endblock %}
 {% endblock %}

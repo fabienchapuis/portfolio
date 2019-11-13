@@ -19,20 +19,21 @@
         <li><a href="{{ path('contact') }}">Contact</a></li>
     </nav>
 </div>
+<h2 class="col-3 mt-5 mr-2 text-right">Contact</h2>
 
 <div id="contactForm" class="mt-4">
     {{ form_start(form) }}
-        <div class="row d-flex justify-content-center">
-            <div class="col-3">{{ form_row(form.name,{'label': 'Nom :'}) }}</div>
-            <div class="col-3">{{ form_row(form.lastname,{'label': 'Prénom :'}) }}</div>
-        </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-3">{{ form_row(form.phone,{'label': 'Numéro de téléphone :'}) }}</div>
-            <div class="col-3">{{ form_row(form.email,{'label': 'Email :'}) }}</div>
-        </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-6">{{ form_row(form.description,{'label': 'Message :'}) }}</div>
-        </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-3">{{ form_row(form.name,{'label': 'Nom :'}) }}</div>
+        <div class="col-3">{{ form_row(form.lastname,{'label': 'Prénom :'}) }}</div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-3">{{ form_row(form.phone,{'label': 'Numéro de téléphone :'}) }}</div>
+        <div class="col-3">{{ form_row(form.email,{'label': 'Email :'}) }}</div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-6">{{ form_row(form.description,{'label': 'Message :'}) }}</div>
+    </div>
     {{ form_rest(form) }}
     <div class="form-group d-flex justify-content-center">
 
