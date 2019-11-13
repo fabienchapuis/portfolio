@@ -2,195 +2,129 @@
 
 namespace App\Entity;
 
-use Symfony\Component\Validator\Constraints as Assert; 
-
-class Contact {
-
+use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @var string|null
- * @Assert\NotBlank()
- * @Assert\Length(min=2, max=20)
+ * @ORM\Entity(repositoryClass="App\Repository\ContactRepository")
  */
-    private $firstname;
+class Contact
+{
+    /**
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
+     * @ORM\Column(type="integer")
+     */
+    private $id;
 
     /**
- * @var string|null
- * @Assert\NotBlank()
- * @Assert\Length(min=2, max=20)
- */
+     * @ORM\Column(type="string", length=25, nullable=false)
+     */
+    private $name;
+
+    /**
+     * @ORM\Column(type="string", length=25), nullable=false
+     */
     private $lastname;
 
+    /**
+     * @ORM\Column(type="text"), nullable=false
+     */
+    private $description;
 
-/**
- * @var string|null
- * @Assert\NotBlank()
- * @Assert\Regex(
- * pattern="/[0-9]{10}/"
- * )
- */
+    /**
+     * @ORM\Column(type="datetime", nullable=false)
+     */
+    private $dateAdd;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
     private $phone;
 
-/**
- * @var string|null
- * @Assert\NotBlank()
- * @Assert\Email()
- */
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
     private $email;
 
-/**
- * @var string|null
- * @Assert\NotBlank()
- * @Assert\Length(min=10, max=255)
- */
-private $message;
-
-/**
- * @var Property|null
- */
-private $property;
-
-    /**
-     * Get the value of firstname
-     *
-     * @return  string|null
-     */ 
-    public function getFirstname()
+    public function __construct()
     {
-        return $this->firstname;
+        $this->dateAdd =new \DateTime();
     }
 
-    /**
-     * Set the value of firstname
-     *
-     * @param  string|null  $firstname
-     *
-     * @return  self
-     */ 
-    public function setFirstname($firstname)
+    public function getId(): ?int
     {
-        $this->firstname = $firstname;
+        return $this->id;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
 
         return $this;
     }
 
-    /**
-     * Get the value of lastname
-     *
-     * @return  string|null
-     */ 
-    public function getLastname()
+    public function getLastname(): ?string
     {
         return $this->lastname;
     }
 
-    /**
-     * Set the value of lastname
-     *
-     * @param  string|null  $lastname
-     *
-     * @return  self
-     */ 
-    public function setLastname($lastname)
+    public function setLastname(string $lastname): self
     {
         $this->lastname = $lastname;
 
         return $this;
     }
 
-    /**
-     * Get pattern="/[0-9]{10}/"
-     *
-     * @return  string|null
-     */ 
-    public function getPhone()
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): self
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    public function getDateadd(): ?\DateTimeInterface
+    {
+        return $this->dateadd;
+    }
+
+    public function setDateadd(\DateTimeInterface $dateadd): self
+    {
+        $this->dateadd = $dateadd;
+
+        return $this;
+    }
+
+    public function getPhone(): ?int
     {
         return $this->phone;
     }
 
-    /**
-     * Set pattern="/[0-9]{10}/"
-     *
-     * @param  string|null  $phone  pattern="/[0-9]{10}/"
-     *
-     * @return  self
-     */ 
-    public function setPhone($phone)
+    public function setPhone(int $phone): self
     {
         $this->phone = $phone;
 
         return $this;
     }
 
-    /**
-     * Get the value of email
-     *
-     * @return  string|null
-     */ 
-    public function getEmail()
+    public function getEmail(): ?string
     {
         return $this->email;
     }
 
-    /**
-     * Set the value of email
-     *
-     * @param  string|null  $email
-     *
-     * @return  self
-     */ 
-    public function setEmail($email)
+    public function setEmail(string $email): self
     {
         $this->email = $email;
 
         return $this;
     }
-
-/**
- * Get the value of message
- *
- * @return  string|null
- */ 
-public function getMessage()
-{
-return $this->message;
-}
-
-/**
- * Set the value of message
- *
- * @param  string|null  $message
- *
- * @return  self
- */ 
-public function setMessage($message)
-{
-$this->message = $message;
-
-return $this;
-}
-
-/**
- * Get the value of property
- *
- * @return  Property|null
- */ 
-public function getProperty()
-{
-return $this->property;
-}
-
-/**
- * Set the value of property
- *
- * @param  Property|null  $property
- *
- * @return  self
- */ 
-public function setProperty($property)
-{
-$this->property = $property;
-
-return $this;
-}
 }

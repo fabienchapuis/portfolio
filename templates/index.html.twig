@@ -1,57 +1,59 @@
 {% extends 'base.html.twig' %}
 
-{% block stylesheets %} <link rel="stylesheet" href="{{ asset('build/css/base.css') }}">{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('build/css/base.css') }}">{% endblock %}
 
 {% block body %}
 <section>
-<div id="container">
-  <div id="burger">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-    <p>Menu</p>
+  <div id="container">
+    <div id="burger">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <p>Menu</p>
+    </div>
+
+    <nav>
+      <li><a href="{{ path('index') }}">Home</a></li>
+      <li><a href="{{ path('about') }}">About</a></li>
+      <li><a href="{{ path('folio') }}">PortFolio</a></li>
+      <li><a href="{{ path('contact') }}">Contact</a></li>
+
+    </nav>
   </div>
 
-  <nav>
-    <li><a href="{{ path('index') }}">Home</a></li>
-    <li><a href="{{ path('about') }}">About</a></li>
-    <li><a href="{{ path('folio') }}">PortFolio</a></li> 
-    <li><a href="{{ path('contact') }}">Contact</a></li> 
 
-  </nav>
-</div>
+  <div class="container">
+    <div class="row ">
+      <div class="glitch  ">
+        <div class="glitch__item"></div>
+        <div class="glitch__item"></div>
+        <div class="glitch__item"></div>
+        <div class="glitch__item"></div>
+        <div class="glitch__item"></div>
+        <h1 class="glitch__title">Fabien CHAPUIS</h1>
 
+      </div>
+    </div>
+  </div>
 
-<div class="container">
-<div class="row ">
-<div class="glitch  ">
-  <div class="glitch__item"></div>
-  <div class="glitch__item"></div>
-  <div class="glitch__item"></div>
-  <div class="glitch__item"></div>
-  <div class="glitch__item"></div>
-  <h1 class="glitch__title">Fabien CHAPUIS</h1>  
-  
-</div>
-</div>
-</div>
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="mt-6">
+        <h2 id="type" class=""></h2>
+      </div>
+    </div>
 
-<div class="container-fluid ">
-<div class="row">
-<div class="mt-6">
-<h2 id="type" class=""></h2>
-</div>
-</div>
-
-</div>
-<div class="container-fluid d-flex justify-content-around mb-10">
-<div class="row">
-<li class=github><a href="https://github.com/fabienchapuis" target="_blank"><img src={{ asset('build/icones/github.png') }}></a>
-        </li>
-        <li class=linkedin><a href="https://www.linkedin.com/in/fabien-chapuis-aa3834182/" target="_blank"><img
-              src={{ asset('build/icones/linkedin.png') }}></a></li>
-              </div>
-              </div>
+  </div>
+  <div class="container-fluid d-flex justify-content-around mb-10">
+    <div class="row">
+      <li class=github><a href="https://github.com/fabienchapuis" target="_blank"><img
+            src={{ asset('build/icones/github.png') }}></a>
+      </li>
+      <li class=linkedin><a href="https://www.linkedin.com/in/fabien-chapuis-aa3834182/" target="_blank"><img
+            src={{ asset('build/icones/linkedin.png') }}></a></li>
+    </div>
+  </div>
 
 </section>
 
